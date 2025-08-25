@@ -21,7 +21,7 @@ group = mod_group_id
 version = mod_version
 
 base {
-    archivesName = mod_id
+    archivesName = mod_id + '-' + minecraft_version
 }
 
 java {
@@ -92,7 +92,7 @@ dependencies {
         jarJar.ranged(it, "[0.5.0,)")
     }
 
-    implementation fg.deobf("mekanism:Mekanism:${mekanism_version}")
+    implementation fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}")
     implementation fg.deobf("curse.maven:mekanism-extras-1026040:6395699")
 }
 

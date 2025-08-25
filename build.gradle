@@ -80,6 +80,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven { url = "https://modmaven.dev/" }
+    maven { url = "https://cursemaven.com/" }
 }
 
 dependencies {
@@ -92,6 +93,7 @@ dependencies {
     }
 
     implementation fg.deobf("mekanism:Mekanism:${mekanism_version}")
+    implementation fg.deobf("curse.maven:mekanism-extras-1026040:6395699")
 }
 
 tasks.named('processResources', ProcessResources).configure {

@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "mekanismreversebin.refmap.json",
   "mixins": [
+    "BlockBinMixin"
   ],
   "client": [
   ],

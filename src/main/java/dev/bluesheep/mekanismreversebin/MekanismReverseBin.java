@@ -1,4 +1,4 @@
-package dev.bluesheep.mekanisminvertbin;
+package dev.bluesheep.mekanismreversebin;
 
 import net.minecraftforge.fml.common.Mod;
 

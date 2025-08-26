@@ -93,7 +93,7 @@ dependencies {
     }
 
     implementation fg.deobf("mekanism:Mekanism:${minecraft_version}-${mekanism_version}")
-    implementation fg.deobf("curse.maven:mekanism-extras-1026040:6395699")
+    implementation fg.deobf("curse.maven:mekanism-extras-1026040:${mekanism_extras_version}")
 }
 
 tasks.named('processResources', ProcessResources).configure {
@@ -109,7 +109,8 @@ tasks.named('processResources', ProcessResources).configure {
             mod_version: mod_version,
             mod_authors: mod_authors,
             mod_description: mod_description,
-            mekanism_version_range: mekanism_version_range
+            mekanism_version_range: mekanism_version_range,
+            mekanism_extras_version_range: mekanism_extras_version_range
     ]
 
     inputs.properties replaceProperties

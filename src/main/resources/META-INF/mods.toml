@@ -69,3 +69,11 @@ mandatory = true
 versionRange = "${mekanism_version_range}"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "mekanism_extras"
+mandatory = false
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange = "${mekanism_extras_version_range}"
+ordering = "NONE"
+side = "BOTH"
